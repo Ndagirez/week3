@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--image borders-->
+<html>
+    <head>
+        <title>image borders</title>
+        <meta charset="utf-8">
+        <style  type="text/css">
+            div {
+                border-width: 30px;
+                width: 234px;
+                padding: 24px 24px;
+                }
+        #stretch{
+                -webkit-border-image: url(flower.jpg) 80 80 80 80 stretch;
+                -moz-border-image: url(flower.jpg) 80 80 80 80 stretch;
+                -o-border-image:url(flower.jpg) 80 80 80 80 stretch;
+                border-image: url(flower.jpg) 80 80 80 80 stretch;
+
+                }
+        #repeat{
+                -webkit-border-image:url(flower.jpg) 34% 34% repeat; 
+                -moz-border-image:url(border.png) 34% 34% repeat;
+                -o-border-image:url(border.png) 34% 34% repeat;
+                border-image:url(border.png) 34% 34% repeat;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>image borders</h1>
+        
+        <img  src="flower.jpg"  alt="image" width="50px" height="50px">
+        <p><div id="stretch">stretching image border </div></p>
+        <p><div id="repeat">repeating the image border </div></p>
+    </body>
+</html>

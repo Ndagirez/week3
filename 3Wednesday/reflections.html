@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--reflections for webkit supported browser-->
+<html>
+    <head>
+        <title>Relections</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+           img {margin: 10px;}
+           img.right {
+                         -webkit-box-reflect: right 5px;
+                         -webkit-gradient:(linear, right top, left top,  from(transparent), to(white));
+                     }
+
+            img.below {
+                         -webkit-box-reflect: below 5px;
+                         -webkit-gradient:(linear, left top, left top,  from(transparent), to(white));
+                     }
+        </style>
+    </head>
+    <body>
+
+        <img src="flower.jpg" alt="flower" width="180px" height="180px" class="below">
+        <img src="flower.jpg" alt="flower" width="180px" height="180px" class="right">
+
+
+        
+    </body>
+</html>
